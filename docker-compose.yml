@@ -13,7 +13,7 @@ services:
         volumes:
           - data:/var/jenkins_home
         networks:
-          - jenkins:
+          - jenkins
 
 volumes:
   data:
