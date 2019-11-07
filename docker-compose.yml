@@ -12,13 +12,14 @@ services:
           - 50000:50000
         volumes:
           - data:/var/jenkins_home
+          - /var/run/docker.sock:/var/run/docker.sock
         networks:
           - jenkins
         deploy:
             resources:
                 limits:
                     memory: 512M
-                    cpus: '0.5'
+                    cpus: '1.5'
 volumes:
   data:
 networks:
