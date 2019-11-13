@@ -3,10 +3,10 @@ version: "3.7"
 services:
     jenkins:
         image: jenkins
-        environment:
-          JAVA_OPTS : "
-            -Djava.util.logging.config.file=/var/jenkins_home/log.properties
-            "
+        #environment:
+        #  JAVA_OPTS : "
+        #    -Djava.util.logging.config.file=/var/jenkins_home/log.properties
+        #    "
         ports:
           - 8042:8080
           - 50000:50000
