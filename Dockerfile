@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins:alpine
 MAINTAINER IFRR-DTI
 
 USER root
